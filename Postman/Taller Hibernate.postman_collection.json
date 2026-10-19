@@ -1,0 +1,165 @@
+{
+  "info": {
+    "_postman_id": "03c71705-7d12-4896-8e68-20beb453573b",
+    "name": "Taller Hibernate",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56729538",
+    "_collection_link": "https://go.postman.co/collection/56729538-03c71705-7d12-4896-8e68-20beb453573b?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Taller Hibernate",
+      "item": [
+        {
+          "name": "Registrar Pelicula1",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Interstellar\",\r\n  \"director\": \"Christopher Nolan\",\r\n  \"genero\": \"Ciencia Ficcion\",\r\n  \"duracion\": 169,\r\n  \"disponible\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/peliculas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "peliculas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Registrar Pelicula2",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Avatar\",\r\n  \"director\": \"James Cameron\",\r\n  \"genero\": \"Ciencia Ficcion\",\r\n  \"duracion\": 162,\r\n  \"disponible\": false\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/peliculas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "peliculas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Registrar Pelicula3",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Shrek\",\r\n  \"director\": \"Andrew Adamson\",\r\n  \"genero\": \"Animacion\",\r\n  \"duracion\": 90,\r\n  \"disponible\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/peliculas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "peliculas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Listar peliculas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/peliculas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "peliculas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar pelicula por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/peliculas/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "peliculas",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar pelicula por genero",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/peliculas/genero?genero=Animacion",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "peliculas",
+                "genero"
+              ],
+              "query": [
+                {
+                  "key": "genero",
+                  "value": "Animacion"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
